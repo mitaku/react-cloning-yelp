@@ -52,4 +52,10 @@ cssloader.test =
   new RegExp(`[^module]${cssloader.test.source}`)
 cssloader.loader = newloader.loader
 
+config.module.loaders.push({
+  test: /\.css$/,
+  include: [modules],
+  loader: 'style!css'
+})
+
 module.exports = config;
