@@ -94,5 +94,10 @@ config.module.loaders.push({
   loader: 'style!css'
 })
 
+// External
+config.externals = {
+  'react/lib/ReactContext': true,
+  'react/lib/ExecutionEnvironment': true
+}
 
 module.exports = config;
