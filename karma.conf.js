@@ -21,7 +21,8 @@ module.exports = function(config) {
 
     plugins: [
       'karma-mocha',
-      'karma-chai'
+      'karma-chai',
+      'karma-webpack'
     ],
 
     // list of files / patterns to load in the browser
